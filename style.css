@@ -14,5 +14,55 @@ h1{
 }
 
 body{
-    background: radial-gradient();
+    background-image: url('./src/assets/img7.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    background: radial-gradient(circle 100rem at center left, #020202, #b2d5e500);   
+    backdrop-filter: calc(22px);
+    height: 100dvh;
+}
+
+.icon{
+    height: 5rem;
+    width: 5rem;
+    user-select: none;
+}
+
+.icon:hover{
+    animation: rotate-scale-up;
+}
+
+/* Animação dos icons */
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
 }
